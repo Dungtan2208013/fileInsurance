@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Insurance - Bảo Hiểm Five Stars</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="ThanVo.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+</head>
+
+<div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0"><img class="img-fluid me-3" src="./images/icon/icon-02-primary.png" alt="">Five Stars</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                <a href="#gioithieu" class="nav-item nav-link">Giới Thiệu</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dịch Vụ</a>
+                    <div class="dropdown-menu bg-light border-0 m-0">
+                        <a href="ThanVo.html" class="dropdown-item">Bảo Hiểm Thân Vỏ</a>
+                        <a href="#" class="dropdown-item">Bảo Hiểm Vật Chất</a>
+                        <a href="#" class="dropdown-item">Bảo Hiểm 2 Chiều</a>
+                        <a href="#" class="dropdown-item">Bảo Hiểm Bắt Buộc</a>
+                    </div>
+                </div>
+                <a href="tinTuc.html" class="nav-item nav-link">Bài Viết</a>
+                <a href="lienHe.html" class="nav-item nav-link">Liên Hệ</a>
+            </div>
+        </div>
+         <!-- ----search--- -->
+         <form class="form">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Tìm Kiếm" id="search" type="text">
+                <div class="icon">
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <button type="reset" class="close-btn">
+                    <svg viewBox="0 0 20 20" class="h-5 w-5"xmlns="https://icons.getbootstrap.com/icons/arrow-right-circle/"> 
+                        <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </label>
+        </form>
+        <!-- --search-end-- -->
+        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Đăng Kí</a>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Image Product Start--> 
+    <img src="./images/bao-hiem-xe-o-to-than-vo.jpg" class="img-product" alt="..." width="100%" height="550px">
+    <!-- Image Product End-->
+
+    <!--Content Start -->
+    <div id="header">
+        <h1>Bảo Hiểm Thân Vỏ</h1>
+        <div class="demo">
+            <button type="button" onclick="showContent('content-1')">
+                <img src="https://ibaoviet.vn/wp-content/uploads/2017/07/icon-infp-product.png" alt="">
+                Quyền Lợi
+            </button>
+            <button type="button" onclick="showContent('content-2')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="35" fill="currentColor"
+                    class="bi bi-cash-coin" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                    <path
+                        d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                    <path
+                        d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+                </svg>
+                Biểu Phí
+            </button>
+            <button type="button" onclick="showContent('content-3')">
+                <img src="https://ibaoviet.vn/wp-content/uploads/2017/07/icon-document.png" alt="">
+                Tài Liệu
+            </button>
+            <button type="button" onclick="showContent('content-4')">
+                <img src="https://ibaoviet.vn/wp-content/uploads/2017/07/bieu-phi.png" alt="">
+                Ước lượng
+            </button>
+            <button type="button" onclick="showContent('content-5')">
+                <img src="https://ibaoviet.vn/wp-content/uploads/2017/07/icon-1.png" alt="" width="60px" height="50px">
+                Thủ tục
+            </button>
+        </div>
+
+        
+        <div class="center-content">
+            <div id="content-1" class="content visible">
+                <h2>Quyền Lợi</h2>
+                <p>Trong cuộc sống điều rủi ro là điều không ai muốn xảy ra. Làm sao để bảo vệ tài sản, giảm thiểu tổn thất về tài chính – Bảo hiểm thân vỏ toàn bộ xe của Bảo Hiểm Five Stars đáp ứng được yêu cầu đó. Bảo hiểm thân vỏ xe ô tô Five Stars có nhiều sự lựa chọn cho khách hàng từ những điều khoản cơ bản đến các điều khoản bổ sung như: Không khấu hao thay mới, sửa chữa xe tại ga-ra chính hãng, không áp dụng mức khấu trừ, mất cắp bộ phận, bảo hiểm xe bị ngập nước,….Quy trình bồi thường Five Stars nhanh chóng, tối giảm thủ tục và cam kết minh bạch. Five Stars cấp đơn bảo hiểm và thu tiền tận nơi theo yêu cầu của khách hàng. Đến với Bảo Hiểm thân vỏ xe ô tô Five Stars – Giúp qúy khách hàng yên tâm trên mọi hành trình.</p>
+                <p>
+                    <span style="color: #ff0000";>
+                        <strong>I. ĐỐI TƯỢNG VÀ PHẠM VI BẢO HIỂM</strong>
+                    </span>
+                </p>
+                <p>
+                    <span style="color: #ff0000";>
+                            <strong>1/ Đối tượng bảo hiểm</strong>
+                    </span>
+                </p>
+                <p>Là thiệt hại vật chất của xe xảy ra do những tai nạn bất ngờ ngoài sự kiểm soát của chủ xe trong những trường hợp cụ thể do quy tắc bảo hiểm quy định.</p>
+                <p>
+                    <span style="color: #ff0000";>
+                            <strong>2/ Phạm vi bảo hiểm</strong>
+                    </span>
+                </p>
+                <p>Five Stars bồi thường cho Chủ xe những thiệt hại vật chất xe xảy ra do:</p>
+                <p>a/ Những tai nạn bất ngờ, ngoài sự kiểm soát của Chủ xe, lái xe trong những trường hợp:  Đâm va, lật, đổ, rơi; chìm; hoả hoạn, cháy, nổ; bị các vật thể khác rơi, va chạm vào;</p>
+                <p>b/ Những tai họa bất khả kháng do thiên nhiên: Bão, lũ lụt, sụt lở, sét đánh, động đất, mưa đá, sóng thần;</p>
+                <p>c/ Mất cắp, mất cướp toàn bộ xe.</p>
+                <p>
+                    <span style="color: #ff0000";>
+                        <strong>II. QUYỀN LỢI BẢO HIỂM</strong>
+                    </span>
+                </p>
+                <p>Five Stars chịu trách nhiệm thanh toán chi phí thực tế để sửa chữa, thay thế (nếu không thể sửa chữa được) bộ phận bị tổn thất, hoặc trả tiền cho Chủ xe để bù đắp tổn thất trên cơ sở xác định được chi phí sửa chữa, khắc phục tổn thất có thể phải trả.</p>
+                <p>Chí phí sửa chữa thực tế sẽ được căn cứ trên báo giá của hệ thống ga ra/xưởng sửa chữa liên kết với Five Stars (trừ trường hợp tham gia điều khoản bổ sung số 03-BVVC).</p>
+                <p>Những bộ phận hư hỏng hoặc xác xe đã được Five Stars chấp thuận bồi thường (hoặc thay mới) thuộc quyền sở hữu của Five Stars; Hoặc Five Stars thu hồi giá trị còn lại của xác xe theo tỷ lệ giữa số tiền bồi thường của Five Stars và giá thị trường của xe ô tô (trường hợp bảo hiểm dưới giá trị, bảo hiểm trùng hoặc có sự tham gia bồi thường của bên thứ ba).</p>
+                <p>
+                    <span style="color: #ff0000";>
+                        <strong>1/ Bồi thường tổn thất bộ phận</strong>
+                    </span>
+                </p>
+                <p>
+                    <em>a) Trường hợp xe được bảo hiểm với số tiền bảo hiểm thấp hơn giá thị trường thì số tiền bồi thường của Five Stars được tính theo tỷ lệ giữa số tiền bảo hiểm và giá thị trường của xe.</em>
+                </p>
+                <p>
+                    <em>b) Trong quá trình sửa chữa, khắc phục tổn thất, nếu phải thay thế bộ phận mới thì Five Stars sẽ xác định chí phí thay mới vật tư, phụ tùng thuộc trách nhiệm bảo hiểm bằng chi phí thực tế thay thế mới vật tư, phụ tùng đó và áp dụng trừ khấu hao theo các mức sau:</em>
+                </p>
+                <ul>
+                    <li>
+                        <em>Thời gian sử dụng xe đến 03 năm giảm 0% giá trị bộ phận thay mới;</em>
+                    </li>
+                    <li>
+                        <em>Thời gian sử dụng xe trên 03 năm đến dưới 06 năm giảm 15% giá trị bộ phận thay mới;</em>
+                    </li>
+                    <li>
+                        <em>Thời gian sử dụng xe từ 06 năm đến dưới 10 năm giảm 25% giá trị bộ phận thay mới;</em>
+                    </li>
+                    <li>
+                        <em>Thời gian sử dụng xe từ 10 năm đến dưới 15 năm giảm 35% giá trị bộ phận thay mới;</em>
+                    </li>
+                    <li>
+                        <em>Thời gian sử dụng xe từ 15 năm trở lên giảm 50% giá trị bộ phận thay mới.</em>
+                    </li>
+                </ul>
+                <p>
+                    <em>c) Five Stars bồi thường toàn bộ chi phí sơn lại xe nếu trên 50% diện tích sơn của xe bị hư hỏng do tai nạn gây ra theo cách tính tại tiết a,b điểm 11.1 Điều 11 Quy tắc này.</em>
+                </p>
+                <p>
+                    <span style="color:#ff0000";>
+                        <strong>2/ Bồi thường tổn thất toàn bộ</strong>
+                    </span>
+                </p>
+                <p>Xe được coi là tổn thất toàn bộ trong trường hợp sau:</p>
+                <p>a) Dự toán sửa chữa xe được phê duyệt bởi Five Stars với mức chi phí sửa chữa ước tính trên 75% giá thị trường của xe ô tô.</p>
+                <p>b) Xe bị mất cắp, bị cướp (có kết luận điều tra hoặc có quyết định tạm đình chỉ điều tra của cơ quan điều tra).</p>
+                <p>Số tiền bồi thường toàn bộ bằng giá trị thị trường của xe trước khi xảy ra tai nạn (tổn thất) và không vượt quá số tiền bảo hiểm ghi trên Hợp đồng/Giấy chứng nhận/Đơn bảo hiểm.</p>
+                <p>
+                    <span style="color: #ff0000";>
+                        <em>
+                            <strong>3/ Mức khấu trừ:</strong>
+                        </em>
+                    </span>
+                    là số tiền mà Chủ xe phải tự gánh chịu trong mỗi vụ tổn thất. Mức khấu trừ  được ghi trên Hợp đồng/Giấy chứng nhận/Đơn bảo hiểm giao kết với/cấp cho Chủ xe. Trường hợp không ghi mức khấu trừ thì mức khấu trừ là 500.000 đồng/vụ tổn thất.
+                </p>
+                <p>
+                    <span style="color:#ff0000";>
+                        <strong>III. QUYỀN LỢI BẢO HIỂM BỔ SUNG</strong>
+                    </span>
+                </p>
+                <p>Điều khoản bổ sung chỉ áp dụng khi xe có tham gia bảo hiểm vật chất ô tô. Chủ xe có thể lựa chọn thêm một trong các Điều khoản bảo hiểm bổ sung và nộp phí bảo hiểm theo Biểu phí đi kèm theo Quy tắc bảo hiểm này để được tăng thêm quyền lợi bảo hiểm hoặc để được giảm phí bảo hiểm.</p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color: #ff0000";>1/ Bảo hiểm không khấu hao thay mới</span>
+                        </strong>
+                    </em>
+                    (Phụ lục số 01-BVVC):
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận nộp phí bảo hiểm của Chủ xe/Người thay mặt chủ xe yêu cầu bảo hiểm, Five Stars đồng ý nhận bảo hiểm cho Chủ xe theo quy định sửa đổi, bổ sung như sau:</p>
+                <p>–      Hủy bỏ quy định bồi thường tổn thất bộ phận tại tiết b, điểm 11.1 Điều 11 của Quy tắc bảo hiểm vật chất ô tô.</p>
+                <p>–      Mở rộng phạm vi bảo hiểm: bồi thường chi phí thay thế mới theo chi phí thực tế và không áp dụng trừ khấu hao vật tư, phụ tùng thay thế mới.</p>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi.</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color:#ff0000";>2/ Thanh toán chi phí thuê xe</span>
+                        </strong>
+                    </em>
+                    (Phụ lục số 02-BVVC):
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận nộp phí của Chủ xe/Người thay mặt Chủ xe yêu cầu bảo hiểm, Five Stars đồng ý thanh toán chi phí thuê xe ô tô để sử dụng trong thời gian xe sửa chữa do tai nạn thuộc trách nhiệm bảo hiểm, cụ thể:</p>
+                <p>–      Five Stars trả tiền thuê xe taxi để đi lại trong thời gian xe phải sửa chữa do tai nạn (có biên lai taxi theo ngày sử dụng thực tế và hóa đơn thuế giá trị gia tăng thể hiện tổng số tiền trong cả đợt thuê xe). Hoặc:</p>
+                <p>–      Hóa đơn thuế giá trị gia tăng của bên cho thuê xe trong thời gian xe phải sửa chữa do tai nạn.</p>
+                <p>–      Trong mọi trường hợp tổng số tiền bồi thường không vượt quá số tiền bảo hiểm trên ngày và số tiền bảo hiểm trên vụ.</p>
+                <p>–      Mức khấu trừ áp dụng đối với phụ lục Thanh toán chi phí thuê xe bằng Số tiền bảo hiểm trên ngày nhân với 03 ngày.</p>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi.</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color:#ff0000";>3/ Bảo hiểm sửa chữa xe tại ga-ra chính hãng </span>
+                        </strong>
+                    </em>
+                    (Phụ lục số 03-BVVC):
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận nộp phí của Chủ xe/Người thay mặt Chủ xe yêu cầu bảo hiểm, Five Stars đồng ý để Chủ xe được quyền chỉ định sửa chữa xe bị thiệt hại vật chất tại Xưởng (Garage) chính hãng (sửa chữa tại ga ra được ủy quyền của hãng sản xuất).</p>
+                <p>Five Stars không nhận bảo hiểm theo điều khoản Bảo hiểm sửa chữa xe tại ga-ra chính hãng đối với  các xe có thời gian sử dụng trên 10 năm tính đến thời điểm giao kết Hợp đồng.</p>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi.</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color:#ff0000">4/ Bảo hiểm áp dụng mức khấu trừ </span>
+                        </strong>
+                    </em>
+                    (Phụ lục số 04-BVVC):
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận mức giảm phí bảo hiểm của Chủ xe/Người thay mặt Chủ xe yêu cầu bảo hiểm, mức khấu trừ mà người yêu cầu bảo hiểm lựa chọn sẽ được quy định cụ thể  trên Giấy chứng nhận bảo hiểm/Đơn bảo hiểm/Hợp đồng bảo hiểm cấp cho Chủ xe.</p>
+                <p>Khi xảy ra thiệt hại thuộc trách nhiệm bảo hiểm, Five Stars sẽ thanh toán bồi thường và áp dụng mức khấu trừ trên mỗi vụ tổn thất, cụ thể như sau:</p>
+                <ul>
+                    <li>
+                        <em>Thiệt hại xe nhỏ hơn hoặc bằng mức khấu trừ, Five Stars không chịu trách nhiệm bồi thường thiệt hại (Chủ xe tự gánh chịu thiệt hại).</em>
+                    </li>
+                    <li>
+                        <em>Thiệt hại trên mức khấu trừ, thì số tiền bồi thường bảo hiểm bằng (=) thiệt hại trừ (-) mức khấu trừ.</em>
+                    </li>
+                </ul>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi.</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color: #ff0000;">5/ Bảo hiểm mất cắp bộ phận </span>
+                        </strong>
+                    </em>
+                    (Phụ lục số 05-BVVC):
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận nộp phí của Chủ xe/Người thay mặt chủ xe yêu cầu bảo hiểm, Five Stars đồng ý nhận bảo hiểm theo quy định sửa đổi bổ sung như sau:</p>
+                <p>–        Hủy bỏ quy định loại trừ mất cắp bộ phận xe tại điểm 12.16, Điều 12 Quy tắc bảo hiểm vật chất ô tô.</p>
+                <p>–        Mở rộng phạm vi bảo hiểm: Five Stars nhận bảo hiểm và chịu trách nhiệm bồi thường cho Chủ xe về những tổn thất bộ phận do bị mất cắp, mất cướp. Giới hạn số lần mất cắp, mất cướp không vượt quá:</p>
+                <p>+   02 lần đối với các Hợp đồng bảo hiểm có thời hạn từ 12 tháng đến 18 tháng (Không nhận bảo hiểm mất cắp bộ phận cho các Hợp đồng bảo hiểm dưới 12 tháng).</p>
+                <p>+   03 lần đối với các Hợp đồng bảo hiểm có thời hạn trên 18 tháng.</p>
+                <p>–      Mức khấu trừ áp dụng riêng cho điều khoản mất cắp bộ phận là 20% số tiền bồi thường và không thấp hơn 2.000.000 đồng. Không áp dụng thêm mức khấu trừ nào khác đã quy định trong Hợp đồng bảo hiểm (nếu có).</p>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi.</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color: #ff0000;">6/ Bảo hiểm xe bị ngập nước</span>
+                        </strong>
+                    </em>
+                    (Phụ lục số 06-BVVC):
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận nộp phí của Chủ xe/Người đại diện Chủ xe tham gia bảo hiểm, Five Stars nhận bảo hiểm thiệt hại vật chất ô tô theo những quy định sửa đổi, bổ sung như sau:</p>
+                <p>–      Hủy bỏ quy định loại trừ hư hỏng về điện hoặc động cơ do xe hoạt động trong vùng ngập nước tại mục 12.14  Điều 12 Quy tắc bảo hiểm vật chất ô tô.</p>
+                <p>–      Mở rộng nhận bảo hiểm trong trường hợp xe ô tô bị thiệt hại động cơ hoặc hư hỏng về điện do lái xe điều khiển xe đi vào vùng ngập nước sẽ được Five Stars bồi thường.</p>
+                <p>–      Mức khấu trừ/vụ áp dụng riêng đối với trường hợp tổn thất động cơ là 10% số tiền bồi thường không thấp hơn 3.000.000 đồng. Không áp dụng thêm mức khấu trừ nào khác đã quy định trong Hợp đồng bảo hiểm (nếu có).</p>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color:#ff0000">7/ Bảo hiểm bồi thường theo giới hạn trách nhiệm</span>
+                        </strong>
+                    </em>
+                    (Phụ lục số 07-BVVC):
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận nộp phí của Chủ xe/Người đại diện Chủ xe tham gia bảo hiểm, Five Stars đồng ý nhận bảo hiểm cho Chủ xe theo quy định sửa đổi, bổ sung như sau:</p>
+                <p>–        Hủy bỏ quy định bồi thường tổn thất bộ phận quy định tại tiết a, điểm 11.1, Điều 11 Quy tắc bảo hiểm vật chất ô tô;</p>
+                <p>–        Mở rộng phạm vi bảo hiểm: Xe được bảo hiểm theo điều khoản “Bảo hiểm theo giới hạn trách nhiệm” được hiểu là xe ô tô được bảo hiểm với số tiền bảo hiểm thấp hơn giá thị trường. Nhưng khi xảy ra tổn thất thuộc phạm vi bảo hiểm được bồi thường như xe tham gia đúng giá trị thực tế (đối với tổn thất bộ phận) và bồi thường theo số tiền bảo hiểm (đối với tổn thất toàn bộ).</p>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi.</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span>8/  Bảo hiểm thiệt hại xảy ra ngoài lãnh thổ Việt Nam </span>
+                        </strong>
+                    </em>
+                    (PLNLT)
+                </p>
+                <p>Trên cơ sở yêu cầu và chấp nhận nộp phí của Chủ xe/Người thay mặt chủ xe yêu cầu bảo hiểm, Five Stars đồng ý nhận bảo hiểm theo quy định sửa đổi bổ sung như sau:</p>
+                <p>Mở rộng phạm vi bảo hiểm: Five Stars nhận bảo hiểm và chịu trách nhiệm bồi thường cho những tổn thất xảy ra ngoài lãnh thổ Việt Nam và trong phạm vi các nước Trung Quốc, Lào, Campuchia, Thái Lan.</p>
+                <p>
+                    <em>Tất cả các quy định khác trong Hợp đồng bảo hiểm không thay đổi.</em>
+                </p>
+                <p>
+                    <em>
+                        <strong>
+                            <span style="color:#ff0000";>9/ Các điều khoản bổ sung khác</span>
+                        </strong>
+                    </em>
+                    (thuộc thẩm quyền của Tổng công ty):
+                </p>
+                <p>Ngoài các điều khoản bổ sung trên, Chủ xe và Five Stars có thể thoả thuận bảo hiểm bằng văn bản theo các điều khoản bảo hiểm riêng (như: đua xe hợp pháp, xe tập lái, mở rộng bảo hiểm thiết bị chuyên dùng …), trên cơ sở chấp thuận của Bảo Việt và theo nguyên tắc mở rộng phạm vi sẽ tăng phí, thu hẹp phạm vi sẽ giảm phí./.</p>
+                <p>
+                    <em>
+                        <span style="color:#ff0000">Lưu ý: Mọi thay đổi thông số kỹ thuật so với Giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đều phải thông báo cho phía công ty bảo hiểm bằng văn bản và được công ty bảo hiểm chấp nhận bằng văn bản.</span>
+                    </em>
+                </p>
+
+                <h3>Những lợi ích khi bảo hiểm thân vỏ xe ô tô:</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <em>Bảo hiểm cho các tai họa bất khả kháng do thiên nhiên gây ra như: Sóng thần, bão, sụt lở, lũ lụt, động đất, sét đánh, mưa đá;</em>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <em>Bảo hiểm cho trường hợp tai nạn bất ngờ, ngoài kiểm soát của chủ xe ô tô như: lật, đổ, đâm va, rơi, chìm; bị các vật thể khác rơi, chạm vào; hỏa hoạn, cháy, nổ;</em>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <em>Bảo hiểm cho trường hợp mất cướp, mất cắp toàn bộ xe.</em>
+                        </li>
+                    </ul>
+                </p>
+
+            </div>
+
+            
+            <div id="content-2" class="content">
+                <h2>Biểu Phí</h2>
+                <p>
+                    <em>
+                        <strong>Bảo Hiểm Five Stars</strong>
+                    </em>
+                     xin giới thiệu tới quý khách hàng biểu phí bảo hiểm vật chất xe ô tô của Bảo Hiểm Five Stars. Để có mức phí tốt nhất xin quý khách hàng vui lòng liên hệ 
+                    <span style="color:#ff0000">
+                        <strong>
+                            Hotline: 
+                            <span style="font-size: 14pt;">0986.999.999</span>
+                        </strong>
+                    </span>
+                </p>
+                <p>
+                    <span style="color:#ff0000;">
+                        <strong>I/ Số tiền bảo hiểm:</strong>
+                    </span>
+                </p>
+                <p>1/ Số tiền bảo hiểm: Là số tiền tối đa mà Five Stars sẽ bồi thường cho Chủ xe khi xảy ra sự kiện bảo hiểm và được quy định trên Giấy chứng nhận/Hợp đồng/Đơn bảo hiểm.                </p>
+                <p>2/ Chủ xe có thể thỏa thuận tham gia bảo hiểm với Số tiền bảo hiểm có thể bằng hoặc thấp hơn giá thị trường của xe tại thời điểm giao kết hợp đồng bảo hiểm.</p>
+                <p>
+                    <span style="color: #ff0000;">
+                        <strong>II/ Các gói bảo hiểm</strong>
+                    </span>
+                </p>
+                
+                
+                <table class="table table-bordered" style="color: #015FC9;">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col" style="text-align: center;">Loại xe</th>
+                        <th scope="row" colspan="3" style="text-align: center;">Giá tiền gói sản phẩm</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <th style="text-align: center;">1 Năm</th>
+                        <th style="text-align: center;">3 Năm</th>
+                        <th style="text-align: center;">5 Năm</th>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">1</th>
+                        <th style="text-align: center;">Xe ô tô con 5 chỗ</th>
+                        <td style="text-align: center;">15 triệu</td>
+                        <td style="text-align: center;">42 triệu</td>
+                        <td style="text-align: center;">65 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">2</th>
+                        <th scope="row" style="text-align: center;">Xe ô tô con 7 chỗ</th>
+                        <td style="text-align: center;">18 triệu</td>
+                        <td style="text-align: center;">51 triệu</td>
+                        <td style="text-align: center;">80 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">3</th>
+                        <th scope="row" style="text-align: center;">Xe ô tô 9 chỗ</th>
+                        <td style="text-align: center;">20 triệu</td>
+                        <td style="text-align: center;">57 triệu</td>
+                        <td style="text-align: center;">90 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">3</th>
+                        <th scope="row" style="text-align: center;">Xe ô tô 16 chỗ</th>
+                        <td style="text-align: center;">22 triệu</td>
+                        <td style="text-align: center;">63 triệu</td>
+                        <td style="text-align: center;">100 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">4</th>
+                        <th scope="row" style="text-align: center;">Xe ô tô 29 chỗ</th>
+                        <td style="text-align: center;">24 triệu</td>
+                        <td style="text-align: center;">69 triệu</td>
+                        <td style="text-align: center;">110 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">5</th>
+                        <th scope="row" style="text-align: center;">Xe ô tô 45 chỗ</th>
+                        <td style="text-align: center;">26 triệu</td>
+                        <td style="text-align: center;">75 triệu</td>
+                        <td style="text-align: center;">120 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;" >6</th>
+                        <th style="text-align: center;">Xe ô tô taxi</th>
+                        <td style="text-align: center;">15 triệu</td>
+                        <td style="text-align: center;">42 triệu</td>
+                        <td style="text-align: center;">65 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">7</th>
+                        <th style="text-align: center;">Xe ô tô bán tải</th>
+                        <td style="text-align: center;">17 triệu</td>
+                        <td style="text-align: center;">48 triệu</td>
+                        <td style="text-align: center;">90 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">8</th>
+                        <th style="text-align: center;">Xe ô tô tập lái</th>
+                        <td style="text-align: center;">20 triệu</td>
+                        <td style="text-align: center;">57 triệu</td>
+                        <td style="text-align: center;">90 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">9</th>
+                        <th style="text-align: center;">Xe ô tô cứu thương</th>
+                        <td style="text-align: center;">22 triệu</td>
+                        <td style="text-align: center;">63 triệu</td>
+                        <td style="text-align: center;">100 triệu</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="text-align: center;">10</th>
+                        <th style="text-align: center;">Xe ô tô tải</th>
+                        <td style="text-align: center;">25 triệu</td>
+                        <td style="text-align: center;">72 triệu</td>
+                        <td style="text-align: center;">115 triệu</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <h3>Những lợi ích khi bảo hiểm thân vỏ xe ô tô:</h3>
+                  <p>
+                      <ul>
+                          <li>
+                              <em>Bảo hiểm cho các tai họa bất khả kháng do thiên nhiên gây ra như: Sóng thần, bão, sụt lở, lũ lụt, động đất, sét đánh, mưa đá;</em>
+                          </li>
+                      </ul>
+                  </p>
+                  <p>
+                      <ul>
+                          <li>
+                              <em>Bảo hiểm cho trường hợp tai nạn bất ngờ, ngoài kiểm soát của chủ xe ô tô như: lật, đổ, đâm va, rơi, chìm; bị các vật thể khác rơi, chạm vào; hỏa hoạn, cháy, nổ;</em>
+                          </li>
+                      </ul>
+                  </p>
+                  <p>
+                      <ul>
+                          <li>
+                              <em>Bảo hiểm cho trường hợp mất cướp, mất cắp toàn bộ xe.</em>
+                          </li>
+                      </ul>
+                  </p>
+
+            </div>
+
+            <div id="content-3" class="content">
+                <h2>Tài Liệu</h2>
+                <p>
+                    <em>
+                        <strong>Bảo hiểm Five Stars</strong>
+                    </em>
+                    xin cung cấp tới quý khách hàng 1 số tài liệu liên quan đến
+                    <em>
+                        <strong> bảo hiểm thân vỏ xe ô tô</strong>
+                    </em>
+                </p>
+                <p>Trước khi quyết định tham gia sản phẩm bảo hiểm thân vỏ xe ô tô quý khách vui lòng đọc kỹ các điều khoản này để chắc chắn rằng mình đã hiểu rõ về sản phẩm mình định tham gia.</p>
+                <p>
+                    <em>
+                        <strong>I/ Lưu ý quan trọng</strong>
+                    </em>
+                </p>
+                <p>a/ Khách hàng đọc kỹ điều kiện, điều khoản trong Quy tắc trước khi tham gia bảo hiểm;</p>
+                <p>b/ Khi xảy ra sự kiện bảo hiểm, khách hàng vui lòng thông báo ngay cho Five Stars để được hỗ trợ và hướng dẫn khắc phục hậu quả tai nạn, giải quyết quyền lợi bảo hiểm cho qúy khách.</p>
+                <p>c/ Quy tắc bảo hiểm này được ban hành trên cơ sở phê chuẩn của Bộ Tài Chính tại công văn số 3906/BTC-QLBH ngày 25/03/2015.</p>
+                <p>
+                    <em>
+                        <strong>II/ Lợi ích khi mua bảo hiểm Five Stars</strong>
+                    </em>
+                </p>
+                <p>
+                    <strong>- Bảo hiểm thân vỏ xe ô tô </strong>
+                    là loại hình bảo hiểm hữu ích, giúp bảo vệ cho chiếc xe thân yêu của bạn khỏi những tai nạn, rủi ro hay sự cố bất ngờ ngoài sự kiểm soát, làm thiệt hại toàn bộ xe hay hư hại đến thân vỏ xe.
+                </p>
+                <p>- Trong cuộc sống điều rủi ro là điều không ai muốn xảy ra. Làm sao để bảo vệ tài sản, giảm thiểu tổn thất về tài chính – Bảo hiểm thân vỏ toàn bộ xe của Bảo Hiểm Five Stars đáp ứng được yêu cầu đó. Bảo hiểm thân vỏ xe ô tô Bảo Việt có nhiều sự lựa chọn cho khách hàng từ những điều khoản cơ bản đến các điều khoản bổ sung như: Không khấu hao thay mới, sửa chữa xe tại ga-ra chính hãng, không áp dụng mức khấu trừ, mất cắp bộ phận, bảo hiểm xe bị ngập nước….</p>
+                <h3>Những lợi ích khi bảo hiểm thân vỏ xe ô tô:</h3>
+                  <p>
+                      <ul>
+                          <li>
+                              <em>Bảo hiểm cho các tai họa bất khả kháng do thiên nhiên gây ra như: Sóng thần, bão, sụt lở, lũ lụt, động đất, sét đánh, mưa đá;</em>
+                          </li>
+                      </ul>
+                  </p>
+                  <p>
+                      <ul>
+                          <li>
+                              <em>Bảo hiểm cho trường hợp tai nạn bất ngờ, ngoài kiểm soát của chủ xe ô tô như: lật, đổ, đâm va, rơi, chìm; bị các vật thể khác rơi, chạm vào; hỏa hoạn, cháy, nổ;</em>
+                          </li>
+                      </ul>
+                  </p>
+                  <p>
+                      <ul>
+                          <li>
+                              <em>Bảo hiểm cho trường hợp mất cướp, mất cắp toàn bộ xe.</em>
+                          </li>
+                      </ul>
+                  </p>
+            </div>
+
+            <div id="content-4" class="content">
+                <h2>Ước Lượng</h2>
+                <p>Nội dung của ước lượng...</p>
+            </div>
+
+            <div id="content-5" class="content">
+                <h2>Thủ Tục</h2>
+                <p>
+                    <em>
+                        <strong>Liên hệ tư vấn</strong>
+                    </em>
+                </p>
+                <p>Sau khi quý khách hàng đã tìm hiểu về sản phẩm và quý khách hàng cần tư vấn hoặc liên hệ mua bảo hiểm, quý khách hàng vui lòng làm theo các cách sau đây:</p>
+                <p>
+                    <strong>1/ Cách 1:</strong>
+                    Gửi hỗ trợ hoặc thông tin qua các form trên bài viết hoặc website.
+                </p>
+                <p>
+                    <strong>2/ Cách 2:</strong>
+                    Gọi điện hoặc nhắn tin đến số điện thoại hotline: 0986.999.999 để nhân viên tư vấn và giải đáp các thắc mắc.
+                </p>
+                <p>
+                    <strong>3/ Cách 3:</strong>
+                    Chat, gửi thông tin qua khung chat, Zalo Official Account
+                </p>
+                <p>
+                    <strong>4/ Cách 4:</strong>
+                    Gửi email yêu cầu tới hòm thư: InsuranceVehicle@gmail.com nội dung yêu cầu được tư vấn hoặc giải đáp. Lưu ý: quý khách hàng vui lòng để lại số điện thoại để tư vấn viên có thể liên hệ một cách nhanh chóng và thuận lợi nhất.
+                </p>
+                <p>
+                    <strong>5/ Cách 5:</strong>
+                    Gửi tin nhắn hoặc zalo qua số điện thoại: 0986.999.999 với nội dung là cần hỗ trợ hoặc tư vấn.
+                </p>
+
+                <p>
+                    <em>
+                        <strong>Một số giấy tờ hoặc thủ tục cần chuẩn bị khi tham gia bảo hiểm:</strong>
+                        Qúy khách hàng khi tham gia sản phẩm bảo hiểm vật chất xe ô tô (Bảo hiểm thân vỏ) quý khách hàng vui lòng cung cấp cho Five Stars một số thông tin sau:
+                    </em>
+                </p>
+                <p>1/ Thông tin xe bao gồm: Tên xe, đời xe, năm sản xuất, mục đích sử dụng để Five Stars báo giá chính xác về biểu phí và quý khách hàng cung cấp thêm số khung, số máy để nhân viên kinh doanh của Five Stars cấp giấy chứng nhận.</p>
+                <p>2/ Ảnh chụp xe nếu có (Nếu chưa có ảnh chụp xe khi nhân viên Five Stars qua giao bảo hiểm bên Five Stars sẽ chụp ảnh và giám định lại xe trước khi cấp giấy chứng nhận).</p>
+                <p>3/ Chuẩn bị các khoản phí đầy đủ theo báo giá bên Five Stars đã báo cho quý khách.</p>
+                <p>4/ Cung cấp thêm thông tin ngân hàng nếu quý khách hàng cần làm giấy chuyển quyền thụ hưởng.</p>
+                <p>
+                    <em>
+                        <strong style="color: #ff0000;">Xin chân thành cám ơn quý khách hàng đã quan tâm đến sản phẩm dịch vụ của chúng tôi.</strong>
+                    </em>
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+    <!--Content end-->
+    
+ <!-- Footer Start -->
+ <div class="abc">
+ <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h1 class="text-white mb-4"><img class="img-fluid me-3" src="#" alt="">Bảo hiểm Five Stars</h1>
+                <p>An toàn, tin cậy. Bảo vệ tài sản và hành trình của bạn. Chọn Five Star, sự lựa chọn đáng tin cậy</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Địa Chỉ</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>08 Đào Tấn, Ba Đình, Hà Nội</p>
+                <p><i class="fa fa-phone-alt me-3"></i>(+84)986.999.999</p>
+                <p><i class="fa fa-envelope me-3"></i>InsuranceVehicle@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Liên Kết</h5>
+                <a class="btn btn-link" href="">Giới Thiệu</a>
+                <a class="btn btn-link" href="">Liên Hệ Chúng Tôi</a>
+                <a class="btn btn-link" href="">Dịch Vụ</a>
+                <a class="btn btn-link" href="">Điều khoản & Điều kiện</a>
+                <a class="btn btn-link" href="">Hỗ Trợ</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Bản Tin</h5>
+                <p>Đăng Kí để nhận thông báo mọi lúc mọi nơi nhé!.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Email của bạn">
+                    <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Đăng Kí</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Bảo Hiểm <a href="#Thanvo.html">Five Star</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer End -->
+
+       <!-- JavaScript Libraries -->
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="lib/wow/wow.min.js"></script>
+       <script src="lib/easing/easing.min.js"></script>
+       <script src="lib/waypoints/waypoints.min.js"></script>
+       <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+       <script src="lib/counterup/counterup.min.js"></script>
+   
+       <!-- Template Javascript -->
+       <script src="ThanVo.js"></script>
+    </body>
+    </html>

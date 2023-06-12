@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+  <link rel="stylesheet" href="./dangnhap.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+
+    <div class="form-container register-container">
+      <div class="close-button">
+        <button id="signUpCloseButton" @click="exit">X</button>
+      </div>
+      <form action="#">
+        <div class="signUp">
+          <h1>Đăng Kí</h1>
+          <input type="text" onblur="checkName()" id="name"  placeholder="Họ Và Tên">
+          <div id="checkName"></div>
+          <input type="text"  id="email" onblur="checkEmail()" placeholder="Email">
+          <div id="checkEmail"></div>
+          <input type="password" id="password" onblur="checkPass()" placeholder="Mật Khẩu">
+          <div id="checkPass"></div>
+          <input type="password" id="repassword"  onblur="checkRepass()" placeholder="Nhập Lại Mật Khẩu">
+          <div id="checkRepass"></div>
+          <button type="button" onclick="signUp()">Đăng Kí</button>
+        </div>
+
+
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <div class="close-button">
+        <button id="signUpCloseButton2" @click="exit">X</button>
+      </div>
+      <form action="#">
+        <div class="signIn">
+          <h1>Đăng Nhập</h1>
+          <input type="text" id="emailLogin" onblur="checkEmailLogin()" placeholder="Email">
+          <div id="checkEmailLogin"></div>
+          <input type="password" id="passwordLogin" placeholder="Mật Khẩu">
+          <div id="checkLogin"></div>
+          <button type="button" @click="signIn">Đăng Nhập</button>
+
+          <a href="">Quên Mật Khẩu?</a>
+        </div>
+
+
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Five Stars Insurance</h1>
+          <p>Nếu bạn đã có tài khoản, hãy đăng nhập tại đây và bắt đầu hành trình của bạn.</p>
+          <button class="ghost" id="login">Đăng Nhập
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+
+          <h1 class="title">Five Stars Insurance</h1>
+          <p>Nếu bạn chưa có tài khoản, hãy tham gia với chúng tôi và bắt đầu hành trình của bạn.</p>
+          <button class="ghost" id="register">Đăng Kí
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./dangnhap.js"></script>
+  <script>
+    document.getElementById("signUpCloseButton").addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+    document.getElementById("signUpCloseButton2").addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+
+</html>

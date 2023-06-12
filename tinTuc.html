@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tuc</title>
+    <link rel="stylesheet" href="tinTuc.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0"><img class="img-fluid me-3" src="./images/img1/icon-02-primary.png" alt="">Five Star</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active" style="background-color: aliceblue;">Trang Chủ</a>
+                <a href="#gioithieu" class="nav-item nav-link">Giới Thiệu</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dịch Vụ</a>
+                    <div class="dropdown-menu bg-light border-0 m-0">
+                        <a href="ThanVo.html" class="dropdown-item">Bảo Hiểm Thân Vỏ</a>
+                        <a href="#" class="dropdown-item">Bảo Hiểm Vật Chất</a>
+                        <a href="#" class="dropdown-item">Bảo Hiểm 2 Chiều</a>
+                        <a href="#" class="dropdown-item">Bảo Hiểm Bắt Buộc</a>
+                    </div>
+                </div>
+                <a href="tinTuc.html" class="nav-item nav-link">Bài Viết</a>
+                <a href="lienHe.html" class="nav-item nav-link">Liên Hệ</a>
+            </div>
+        </div>
+        <!-- ----search--- -->
+        <form class="form">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Tìm Kiếm" id="search" type="text">
+                <div class="icon">
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <button type="reset" class="close-btn">
+                    <svg viewBox="0 0 20 20" class="h-5 w-5"
+                        xmlns="https://icons.getbootstrap.com/icons/arrow-right-circle/">
+                        <path clip-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </label>
+        </form>
+        <!-- --search-end-- -->
+        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Đăng Kí</a>
+    </nav>
+    <!-- content -->
+    <div id="content">
+        <div class="content-1">
+            <h1>Tin Tức</h1>
+            <p>Nơi cập nhật các thông tin liên quan đến bảo hiểm, hướng dẫn và các tài liệu liên quan</p>
+        </div>
+
+        <div id="news">
+            <div class="page-content" id="page-1">
+                <!-- Nội dung trang 1.1 -->
+                <div class="container px-4 text-center">
+                    <div class="row gx-0">
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-1.jpg" alt="" width="100%">
+                                    <h5>Bảo hiểm bắt buộc với xe ô tô</h5>
+                                    <p>Trong phạm vi bài viết này Five Stars sẽ chia sẻ tới các bạn những thông tin về
+                                        bảo
+                                        hiểm bắt buộc đối với xe ô tô- một trong những loại bảo hiểm chuyên dành cho xe
+                                        cơ
+                                        giới được rất nhiều sự quan tâm...
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <div>
+                                        <img src="./images/img1/TinTuc-3.jpg" alt="" width="100%">
+                                    </div>
+
+                                    <h5>Hồ sơ bổi thường bảo hiểm cơ giới</h5>
+                                    <p>Những chia sẻ của Five Stars liên quan đến hồ sơ bồi thường Bảo hiểm Bảo Việt
+                                        dưới
+                                        đây sẽ giúp việc nộp đơn yêu cầu bồi thường của khách hàng với Bảo Việt trở nên
+                                        đơn
+                                        giản, thuận tiện hơn... </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-4.jpg" alt="" width="100%">
+                                    <h5>Tìm hiểu "Giá bảo hiểm ô tô"</h5>
+                                    <p>
+                                        Việc đánh giá một sản phẩm bảo hiểm chất lượng tốt không chỉ căn cứ vào những
+                                        giá
+                                        trị, quyền lợi mà sản phẩm mang lại, mà còn căn cứ vào cả mức chi phí phải thanh
+                                        toán để sở hữu sản phẩm đó.
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nội dung trang 1.2 -->
+                <div class="container px-4 text-center">
+                    <div class="row gx-0">
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-2.jpg" alt="" width="100%">
+                                    <h5>Phí Bảo Hiểm xe ô tô</h5>
+                                    <p>Với nhu cầu sử dụng lớn hiện nay, cũng như các quyền lợi hấp dẫn mà sản phẩm đem
+                                        lại thì phí bảo hiểm ô tô có đắt không?
+                                        Mức phí áp dụng của các sản phẩm bảo hiểm có giống nhau không?
+                                        Hãy cùng Five Stars giải đáp thắc mắc đó qua bài viết “Phí bảo hiểm ô tô” ngay
+                                        sau
+                                        đây nhé...
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <div>
+                                        <img src="./images/img1/TinTuc-5.jpg" alt="" width="100%">
+                                    </div>
+
+                                    <h5>Có nên mua Bảo Hiểm 2 chiều xe ô tô</h5>
+                                    <p>Một sản phẩm bảo hiểm chuyên dành cho xe ô tô được nhiều chủ xe quan tâm tìm
+                                        hiểu.
+                                        Vậy có nên mua bảo hiểm 2 chiều cho xe ô tô không? Tại sao sản phẩm này lại được
+                                        tin dùng nhiều đến vậy?
+                                        ....để giải đáp những băn khoăn đó bạn hãy cùng Five Stars đến với bài chia sẻ
+                                        dưới đây nhé!.. </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-6.jpg" alt="" width="100%">
+                                    <h5>Tỉ lệ phí Bảo Hiểm vật chất ô tô</h5>
+                                    <p>
+                                        Để hiểu rõ hơn về sản phẩm này, cũng như những giá trị, quyền lợi, tỷ lệ phí bảo
+                                        hiểm vật chất xe ô tô áp dụng đối với từng trường hợp khách hàng khi tham gia sử
+                                        dụng sản phẩm được quy định ra sao, mức giá như nào
+                                        các bạn hãy cùng Five Stars đến với bài chia sẻ ngay dưới đây nhé!..
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nội dung trang 2.1 -->
+            <div class="page-content" id="page-2" style="display: none;">
+                <div class="container px-4 text-center">
+                    <div class="row gx-0">
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-8.jpg" alt="" width="100%">
+                                    <h5>Cách tính tiền mua Bảo Hiểm xe ô tô</h5>
+                                    <p>Trong phạm vi bài viết này Five Stars sẽ chia sẻ tới các bạn những thông tin về
+                                        bảo
+                                        hiểm bắt buộc đối với xe ô tô- một trong những loại bảo hiểm chuyên dành cho xe
+                                        cơ
+                                        giới được rất nhiều sự quan tâm...
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <div>
+                                        <img src="./images/img1/TinTuc-9.jpg" alt="" width="100%">
+                                    </div>
+
+                                    <h5>Hồ sơ bổi thường bảo hiểm cơ giới</h5>
+                                    <p>Những chia sẻ của Five Stars liên quan đến hồ sơ bồi thường Bảo hiểm Bảo Việt
+                                        dưới
+                                        đây sẽ giúp việc nộp đơn yêu cầu bồi thường của khách hàng với Bảo Việt trở nên
+                                        đơn
+                                        giản, thuận tiện hơn... </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-10.jpg" alt="" width="100%">
+                                    <h5>Tìm hiểu "Giá bảo hiểm thân vỏ ô tô"</h5>
+                                    <p>
+                                        Việc đánh giá một sản phẩm bảo hiểm chất lượng tốt không chỉ căn cứ vào những
+                                        giá
+                                        trị, quyền lợi mà sản phẩm mang lại, mà còn căn cứ vào cả mức chi phí phải thanh
+                                        toán để sở hữu sản phẩm đó.
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nội dung trang 2.2 -->
+                <div class="container px-4 text-center">
+                    <div class="row gx-0">
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-11.jpg" alt="" width="100%">
+                                    <h5>Lưu ý khi mua Bảo Hiểm ô tô</h5>
+                                    <p>Trong phạm vi bài viết này Five Stars sẽ chia sẻ tới các bạn những thông tin về
+                                        bảo
+                                        hiểm bắt buộc đối với xe ô tô- một trong những loại bảo hiểm chuyên dành cho xe
+                                        cơ
+                                        giới được rất nhiều sự quan tâm...
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <div>
+                                        <img src="./images/img1/TinTuc-12.jpg" alt="" width="100%">
+                                    </div>
+
+                                    <h5>Tỉ lệ phí bảo hiểm xe ô tô</h5>
+                                    <p>Những chia sẻ của Five Stars liên quan đến hồ sơ bồi thường Bảo hiểm Bảo Việt
+                                        dưới
+                                        đây sẽ giúp việc nộp đơn yêu cầu bồi thường của khách hàng với Bảo Việt trở nên
+                                        đơn
+                                        giản, thuận tiện hơn... </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-4.jpg" alt="" width="100%">
+                                    <h5>Tìm hiểu "Giá bảo hiểm ô tô"</h5>
+                                    <p>
+                                        Việc đánh giá một sản phẩm bảo hiểm chất lượng tốt không chỉ căn cứ vào những
+                                        giá
+                                        trị, quyền lợi mà sản phẩm mang lại, mà còn căn cứ vào cả mức chi phí phải thanh
+                                        toán để sở hữu sản phẩm đó.
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nội dung trang 3 -->
+            <div class="page-content" id="page-3" style="display: none;">
+
+                <div class="container px-4 text-center">
+                    <div class="row gx-0">
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-1.jpg" alt="" width="100%">
+                                    <h5>Bảo hiểm bắt buộc với xe ô tô</h5>
+                                    <p>Trong phạm vi bài viết này Five Stars sẽ chia sẻ tới các bạn những thông tin về
+                                        bảo
+                                        hiểm bắt buộc đối với xe ô tô- một trong những loại bảo hiểm chuyên dành cho xe
+                                        cơ
+                                        giới được rất nhiều sự quan tâm...
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <div>
+                                        <img src="./images/img1/TinTuc-3.jpg" alt="" width="100%">
+                                    </div>
+
+                                    <h5>Hồ sơ bổi thường bảo hiểm cơ giới</h5>
+                                    <p>Những chia sẻ của Five Stars liên quan đến hồ sơ bồi thường Bảo hiểm Bảo Việt
+                                        dưới
+                                        đây sẽ giúp việc nộp đơn yêu cầu bồi thường của khách hàng với Bảo Việt trở nên
+                                        đơn
+                                        giản, thuận tiện hơn... </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-4.jpg" alt="" width="100%">
+                                    <h5>Tìm hiểu "Giá bảo hiểm ô tô"</h5>
+                                    <p>
+                                        Việc đánh giá một sản phẩm bảo hiểm chất lượng tốt không chỉ căn cứ vào những
+                                        giá
+                                        trị, quyền lợi mà sản phẩm mang lại, mà còn căn cứ vào cả mức chi phí phải thanh
+                                        toán để sở hữu sản phẩm đó.
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-4 text-center">
+                    <div class="row gx-0">
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-1.jpg" alt="" width="100%">
+                                    <h5>Bảo hiểm bắt buộc với xe ô tô</h5>
+                                    <p>Trong phạm vi bài viết này Five Stars sẽ chia sẻ tới các bạn những thông tin về
+                                        bảo
+                                        hiểm bắt buộc đối với xe ô tô- một trong những loại bảo hiểm chuyên dành cho xe
+                                        cơ
+                                        giới được rất nhiều sự quan tâm...
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <div>
+                                        <img src="./images/img1/TinTuc-3.jpg" alt="" width="100%">
+                                    </div>
+
+                                    <h5>Hồ sơ bổi thường bảo hiểm cơ giới</h5>
+                                    <p>Những chia sẻ của Five Stars liên quan đến hồ sơ bồi thường Bảo hiểm Bảo Việt
+                                        dưới
+                                        đây sẽ giúp việc nộp đơn yêu cầu bồi thường của khách hàng với Bảo Việt trở nên
+                                        đơn
+                                        giản, thuận tiện hơn... </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3">
+
+                                <div class="news-1">
+                                    <img src="./images/img1/TinTuc-4.jpg" alt="" width="100%">
+                                    <h5>Tìm hiểu "Giá bảo hiểm ô tô"</h5>
+                                    <p>
+                                        Việc đánh giá một sản phẩm bảo hiểm chất lượng tốt không chỉ căn cứ vào những
+                                        giá
+                                        trị, quyền lợi mà sản phẩm mang lại, mà còn căn cứ vào cả mức chi phí phải thanh
+                                        toán để sở hữu sản phẩm đó.
+                                    </p>
+                                    <button><b>XEM THÊM</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phân trang -->
+            <div class="pagination">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" onclick="showPage(1); return false;">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" onclick="showPage(2); return false;">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" onclick="showPage(3); return false;">3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- content-end -->
+
+    <!-- Footer Start -->
+    <div class="abc">
+        <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h1 class="text-white mb-4"><img class="img-fluid me-3" src="#" alt="">Bảo hiểm Five Star</h1>
+                        <p>An toàn, tin cậy. Bảo vệ tài sản và hành trình của bạn. Chọn Five Star, sự lựa chọn đáng tin
+                            cậy</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Địa Chỉ</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>08 Đào Tấn, Ba Đình, Hà Nội</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>(+84)86 9339 182</p>
+                        <p><i class="fa fa-envelope me-3"></i>InsuranceVehicle@gmail.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Liên Kết</h5>
+                        <a class="btn btn-link" href="">Giới Thiệu</a>
+                        <a class="btn btn-link" href="">Liên Hệ Chúng Tôi</a>
+                        <a class="btn btn-link" href="">Dịch Vụ</a>
+                        <a class="btn btn-link" href="">Điều khoản & Điều kiện</a>
+                        <a class="btn btn-link" href="">Hỗ Trợ</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Bản Tin</h5>
+                        <p>Đăng Kí để nhận thông báo mọi lúc mọi nơi nhé!.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Đăng Kí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            <!-- Bảo Hiểm <a href="#navbar.html">Five Star</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <script src="tinTuc.js"></script>
+    <script>
+        function showPage(page) {
+            var pages = document.getElementsByClassName("page-content");
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+            document.getElementById("page-" + page).style.display = "block";
+
+            var links = document.getElementsByClassName("page-link");
+            for (var i = 0; i < links.length; i++) {
+                links[i].classList.remove("active");
+            }
+            document.querySelector('a.page-link[href="#"][onclick="showPage(' + page + '); return false;"]').classList.add("active");
+            document.getElementById("content").scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Mặc định hiển thị trang 1
+        showPage(1);
+    </script>
+
+</body>
+
+
+</html>
